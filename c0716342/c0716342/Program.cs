@@ -15,7 +15,19 @@ namespace c0716342
             StudentInformation _Mark = new StudentInformation("Mark", 0.2, 3);
             StudentInformation _Steve = new StudentInformation("Steve", 2.9, 16);
             StudentInformation _Cindy = new StudentInformation("Cindy", 3.9, 187);
-        }
+        
+        // create a collection of Studentinformation Records
+        var StudentList = new List<StudentInformation>();
+        StudentList.Add(_Mary);
+        StudentList.Add(_John);
+        StudentList.Add(_Mark);
+        StudentList.Add(_Steve);
+        StudentList.Add(_Cindy);
+            foreach (var student in StudentList)
+            {
+                Console.WriteLine(student.Name);
+            }
+            
 
         class StudentInformation
         {
